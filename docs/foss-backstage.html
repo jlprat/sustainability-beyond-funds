@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Sustainability beyond funds</title>
+
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="reveal.js/dist/theme/sky.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+  <style type="text/css">
+    .reveal,
+    .reveal h2,
+    .reveal h3 {
+      font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, FreeSerif, serif !important;
+      --r-main-font-size: 40px !important;
+      --r-block-margin: 20px !important;
+      --r-heading-margin: 0 0 20px 0 !important;
+      --r-heading-font: Palatino Linotype, Book Antiqua, Palatino, FreeSerif, serif !important;
+      --r-heading-line-height: 1.2 !important;
+      --r-heading-letter-spacing: normal !important;
+      --r-heading-text-transform: none !important;
+      --r-heading-text-shadow: none !important;
+      --r-heading-font-weight: normal !important;
+      --r-heading1-text-shadow: none !important;
+      --r-heading1-size: 3.77em !important;
+      --r-heading2-size: 2.11em !important;
+      --r-heading3-size: 1.55em !important;
+      --r-heading4-size: 1em !important;
+    }
+
+    .reveal code:not(.hljs) {
+      color: #452ee2;
+      font-weight: bold;
+    }
+
+    .reveal small.disclaimer {
+      font-size: 18px;
+    }
+
+    .reveal pre {
+      width: 100%;
+    }
+
+    .top_left {
+      position: absolute;
+      top: -150px;
+      right: 10px;
+      max-width: 50% !important;
+      max-height: 50% !important;
+    }
+
+    .top_left_slide {
+      position: absolute;
+      top: -150px;
+      right: 10px;
+      width: 40%;
+    }
+
+    .white_smoke_shadow {
+      color: whitesmoke !important;
+      text-shadow: 1px 1px 20px black !important;
+    }
+
+    .white_smoke_background {
+      color: whitesmoke !important;
+      background-color: rgba(28, 27, 27, 0.7);
+      padding: 0 30px;
+      width: fit-content;
+    }
+
+    .portrait {
+      height: 200px;
+      height: 200px;
+      position: absolute;
+      top: -50px;
+      right: 20px;
+    }
+
+    .reveal h3 {
+      font-weight: bold;
+    }
+
+    .hljs-comment,
+    .hljs-quote,
+    .hljs-deletion,
+    .hljs-meta {
+      color: #31d701;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 40px;
+      left: 50px;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .reveal blockquote {
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .print-pdf footer {
+      position: absolute;
+      bottom: -406px;
+      left: 50px;
+    }
+
+    .print-pdf .top_left {
+      position: relative;
+      top: 0;
+      left: 244px;
+      max-width: 340px;
+    }
+
+    .print-only {
+      display: none;
+    }
+
+    .print-pdf .print-only {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <img src="images/aiven-logo_RGB.png" alt="Aiven Logo" class="top_left">
+        <h2><b>Sustainability beyond funds</b></h2>
+        <footer class="print-only">
+          Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; FOSS Backstage
+        </footer>
+      </section>
+      <section>
+        <h2>We have a problem!</h2>
+      </section>
+      <section>
+        <h3>Open Source Dependencies</h3>
+        <ul>
+          <li class="fragment">How many dependencies?</li>
+          <li class="fragment">And how many dependencies have these?</li>
+          <li class="fragment">How many levels deep?</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Let's fund those!</h3>
+        <ul>
+          <li class="fragment">How much money?</li>
+          <li class="fragment">Which ones do we fund?</li>
+          <li class="fragment">Does it reach where it needs to?</li>
+        </ul>
+      </section>
+      <section>
+        <h2>What if there was an additional way?</h2>
+      </section>
+      <section>
+        <h3>Extrospective OSPOs</h3>
+        <p>
+          Open Source Program Offices whose focus is to contribute to your dependency graph.
+        </p>
+      </section>
+      <section>
+        <h3>How do we make it work?</h3>
+        <ul>
+          <li class="fragment">Engineers reporting to the OSPO</li>
+          <li class="fragment">Independent timelines</li>
+          <li class="fragment">Work is 100% open source</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Work on what?</h3>
+        <p>You have 2 options to select which projects to focus on:</p>
+        <ul>
+          <li class="fragment">Semantically</li>
+          <li class="fragment">Hierarchically</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Picking Projects Semantically</h3>
+        <p>Which projects your company or product depends on the most?
+        </p>
+        <p class="fragment">Sort the list by impact on your business and you have your target projects.</p>
+      </section>
+      <section>
+        <h3>Picking Projects Hierarchically</h3>
+        <p>Similarly as before, but simply focus on your direct dependencies.</p>
+      </section>
+      <section>
+        <h3>Why doing this?</h3>
+        <p>To make open source projects more sustainable.</p>
+        <ul>
+          <li class="fragment">Reduce bus factor</li>
+          <li class="fragment">Share maintenance burden</li>
+          <li class="fragment">Job market for OSS maintainers</li>
+          <li class="fragment">Keep projects open</li>
+        </ul>
+      </section>
+      <section>
+        <h3>How do we measure success?</h3>
+        <p>At project level, we want to:</p>
+        <ul>
+          <li class="fragment">Lower the time to review</li>
+          <li class="fragment">Lower the number of issues</li>
+          <li class="fragment">Increase number of regular contributors</li>
+        </ul>
+      </section>
+      <section>
+        <h3>How do we measure success?</h3>
+        <p>At individual contributor level, we want to:</p>
+        <ul>
+          <li class="fragment">Contribute features and bug fixes</li>
+          <li class="fragment">Review pull requests and triage issues</li>
+          <li class="fragment">Increase awareness of the projects</li>
+        </ul>
+      </section>
+      <section>
+        <h3>An Example -- Aiven</h3>
+        <ul>
+          <li class="fragment">We focus on 6 projects picked semantically</li>
+          <li class="fragment">~15 people working on upstream projects</li>
+          <li class="fragment">Employ 5 maintainers</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Convincing your organization</h2>
+      </section>
+      <section>
+        <h3>Sustaining the business</h3>
+        <p>Work in Extrospective OSPOs are directly supporting the viability of the business. Cost of replacement is
+          prohibitive and would kill the business.</p>
+      </section>
+      <section>
+        <h3>Fast reaction</h3>
+        <p>Vulnerabilities will lower. They will still exist, but they will be solved quicker!</p>
+      </section>
+      <section>
+        <h3>Ensure Sustainability</h3>
+        <p>The team can make sure the features needed are kept or will advocate to add new ones.</p>
+      </section>
+      <section data-background="images/together.jpg">
+        <div>
+          <center>
+            <h3 class="white_smoke_background">One is not enough! We need you!</h3>
+          </center>
+        </div>
+      </section>
+      <section>
+        <h1>Thanks!</h1>
+        <img src="images/foss-backstage-qr.svg"
+          alt="https://jlprat.github.io/sustainability-beyond-funds/foss-backstage.html">
+        <p class="print-only">
+          <small>
+            Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; FOSS Backstage
+          </small>
+        </p>
+      </section>
+    </div>
+    <footer>
+      Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; FOSS Backstage
+    </footer>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="reveal.js/plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
+</body>
+
+</html>
