@@ -50,7 +50,7 @@
     .top_left {
       position: absolute;
       top: -150px;
-      right: 10px;
+      right: 35px;
       max-width: 50% !important;
       max-height: 50% !important;
     }
@@ -128,6 +128,18 @@
       display: none;
     }
 
+    .resting-page footer .small {
+      display: none;
+    }
+
+    footer .full {
+      display: none;
+    }
+
+    .resting-page footer .full {
+      display: block;
+    }
+
     .print-pdf .print-only {
       display: block;
     }
@@ -143,14 +155,14 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <section>
+      <section data-state="resting-page">
         <img src="images/aiven-logo_RGB.png" alt="Aiven Logo" class="top_left">
         <h2><b>Sustainability beyond funds</b></h2>
         <footer class="print-only">
-          Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; FOSS Backstage
+          Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; @aiven_io
         </footer>
       </section>
-      <section data-background="images/oops.jpg">
+      <section data-background="images/oops.jpg" data-background-position="top">
         <center>
           <h2 class="white_smoke_background">We have a problem!</h2>
         </center>
@@ -205,9 +217,21 @@
         </p>
         <p class="fragment">Sort the list by impact on your business and you have your target projects.</p>
       </section>
+      <section data-transition="slide-in none">
+        <h3>Picking Projects Semantically</h3>
+        <img src="images/semantical.svg" alt="Semantically picking projects">
+      </section>
+      <section data-transition="none slide-out">
+        <h3>Picking Projects Semantically</h3>
+        <img src="images/semantical-highlighted.svg" alt="Semantically picking projects highlighted">
+      </section>
       <section>
         <h3>Picking Projects Hierarchically</h3>
         <p>Similarly as before, but simply focus on your direct dependencies.</p>
+      </section>
+      <section>
+        <h3>Picking Projects Hierarchically</h3>
+        <img src="images/hierarchical.svg" alt="Hierarchically picking projects">
       </section>
       <section>
         <h3>Why doing this?</h3>
@@ -240,7 +264,21 @@
       <section>
         <h3>An Example &mdash; <img src="images/aiven-logo_RGB.png" alt="Aiven Logo" class="logo_title"></h3>
         <ul>
-          <li class="fragment">We focus on 6 projects picked semantically</li>
+          <li class="fragment">We focus on 6 projects picked semantically <br />
+            <center>
+              <img src="images/kafka_highres.png" style="height: 40px;" alt="Apache Kafka Logo" class="fragment">
+              <img src="images/flink2_500_color_black.png" style="height: 40px;" alt="Apache Flink Logo"
+                class="fragment">
+              <img src="images/Apache Cassandra.svg" style="height: 40px;" alt="Apache Cassandra Logo" class="fragment">
+              <img src="images/PostgreSQL_logo.3colors.540x557.png" style="height: 40px;" alt="PostgreSQL Logo"
+                class="fragment">
+              <img src="images/opensearch_logo_default.png" style="height: 40px;" alt="OpenSearch Logo"
+                class="fragment">
+              <img src="images/clickHouse.svg" style="height: 40px;" alt="ClickHouse Logo" class="fragment">
+            </center>
+            <small class="disclaimer fragment"><em>Apache Kafka, Apache Flink, Apache Cassandra, PostgreSQL, OpenSearch
+                and ClickHouse are trademarks of their respective owners.</em></small>
+          </li>
           <li class="fragment">~15 people working on upstream projects</li>
           <li class="fragment">Employ 5 maintainers of our dependencies</li>
         </ul>
@@ -270,19 +308,25 @@
           </center>
         </div>
       </section>
-      <section>
+      <section data-state="resting-page">
         <h1>Thanks!</h1>
+        <small>https://jlprat.github.io/sustainability-beyond-funds/foss-backstage.html</small>
         <img src="images/foss-backstage-qr.svg"
           alt="https://jlprat.github.io/sustainability-beyond-funds/foss-backstage.html">
         <p class="print-only">
           <small>
-            Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; FOSS Backstage
+            Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; @aiven_io
           </small>
         </p>
       </section>
     </div>
     <footer>
-      Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; FOSS Backstage
+      <div class="full">
+        Josep Prat &mdash; @jlprat &mdash; #extrospectiveOSPO &mdash; @aiven_io
+      </div>
+      <div class="small">
+        @jlprat &mdash; #extrospectiveOSPO
+      </div>
     </footer>
   </div>
 
